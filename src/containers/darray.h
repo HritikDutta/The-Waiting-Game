@@ -176,6 +176,18 @@ inline T remove_swap(DynamicArray<T>& arr, u64 index)
     return removed;
 }
 
+template <typename T>
+inline u64 find(const DynamicArray<T>& arr, const T& needle)
+{
+    for (u64 i = 0; i < arr.size; i++)
+    {
+        if (arr[i] == needle)
+            return i;
+    }
+
+    return arr.size;
+}
+
 template <template <typename> typename ArrayType, typename T>
 void print_to_file(FILE* file, const ArrayType<T>& array)
 {
