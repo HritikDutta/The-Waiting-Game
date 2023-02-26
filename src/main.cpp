@@ -205,7 +205,7 @@ void create_app(Application& app)
     app.window.width  = 1280;
     app.window.height = 720;
     app.window.ref_height = 900;
-    app.window.name = ref("Loading Screen Game!");
+    app.window.name = ref("The Waiting Game!");
     app.window.icon_path = ref("assets/art/game_icon.ico");
 
     app.on_init   = init;
